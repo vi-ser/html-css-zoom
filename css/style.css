@@ -37,6 +37,8 @@ main .options .speaker-view {
     align-items: center;
     gap: 3px;
 
+    z-index: 1;
+
     border-radius: 6px;
 
     padding: 6px;
@@ -56,28 +58,24 @@ main .options .expand {
 }
 
 main .container {
-    padding: 81px 151px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* test */
+
+    padding: 81px 151px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px 6px;
 
     width: 100%;
+    height: calc(100vh - 86px);
 
-    top: 50%;
-    left: 50%;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-
+    overflow-y: scroll;
 }
 
 main .container .person {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* test */
-    margin-bottom: ;
 
     display: flex;
 
@@ -119,7 +117,7 @@ main .container .person .username .name {
 /* bottom bar */
 .bottom-bar {
     /* height: 40px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* test */
 
     display: flex;
@@ -137,6 +135,7 @@ main .container .person .username .name {
 
 .group {
     display: flex;
+    align-items: flex-end;
     gap: 20px;
 
     color: white;
@@ -157,6 +156,41 @@ main .container .person .username .name {
 
 .bottom-bar .label {
     font-size: 14px;
+}
+
+.green {
+    color: #4BC800;
+}
+
+.bottom-bar .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.center.group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.end {
+    display: flex;
+    align-items: center;
+
+    background-color: #4A4A4A;
+    padding: 0 20px;
+    height: 86px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.end span {
+    color: red;
 }
 
 
