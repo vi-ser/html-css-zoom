@@ -16,25 +16,68 @@ main {
     /* background-color: rgba(0, 0, 255, 0.462); */
     /* test */
 
-    padding: 81px 151px;
     width: 100vw;
     height: 100vh;
+
+    position: relative;
+}
+
+main .options {
+    display: flex;
+    gap: 8px;
+    color: white;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+main .options .speaker-view {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    border-radius: 6px;
+
+    padding: 6px;
+    background-color: #4A4A4A;
+}
+
+main .options .speaker-view p {
+    font-size: 14px;
+}
+
+main .options .expand {
+
+    border-radius: 6px;
+
+    padding: 6px;
+    background-color: #4A4A4A;
 }
 
 main .container {
+    padding: 81px 151px;
+
     border: 1px solid red;
     /* test */
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 16px 6px;
 
     width: 100%;
+
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
 
 }
 
 main .container .person {
     border: 1px solid red;
     /* test */
+    margin-bottom: ;
 
     display: flex;
 
@@ -79,6 +122,7 @@ main .container .person .username .name {
     border: 1px solid red;
     /* test */
 
+    background-color: #222222;
     width: 100vw;
     position: fixed;
     bottom: 0;
