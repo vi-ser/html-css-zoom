@@ -24,8 +24,51 @@ main {
 main .container {
     border: 1px solid red;
     /* test */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 
     width: 100%;
+
+}
+
+main .container .person {
+    border: 1px solid red;
+    /* test */
+
+    display: flex;
+
+    position: relative;
+    width: calc(100% / 7 - 6px / 7 * 6);
+
+}
+
+main .container .person img {
+    width: 100%;
+
+}
+
+main .container .person .username {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 8px 4px;
+
+    position: absolute;
+    bottom: 0px;
+
+
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+
+
+main .container .person .username .name {
+    font-weight: 100;
+    font-size: 14px;
+    display: inline-block;
 }
 
 /* fine main */
