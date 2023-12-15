@@ -30,14 +30,15 @@ main .options {
     position: absolute;
     top: 8px;
     right: 8px;
+
+    z-index: 1;
+
 }
 
 main .options .speaker-view {
     display: flex;
     align-items: center;
     gap: 3px;
-
-    z-index: 1;
 
     border-radius: 6px;
 
@@ -62,8 +63,9 @@ main .container {
     /* border: 1px solid red; */
     /* test */
 
-    padding: 81px 151px;
+    padding: 81px 0 20px 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px 6px;
 
@@ -80,8 +82,9 @@ main .container .person {
     display: flex;
 
     position: relative;
-    width: calc(100% / 7 - 6px / 7 * 6);
-
+    /* width: calc(100% / 7 - 6px / 7 * 6); */
+    width: calc(100% / 6);
+    min-width: 300px;
 }
 
 main .container .person img {
