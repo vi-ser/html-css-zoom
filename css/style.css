@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: black;
+    position: relative;
+}
+
+/* main */
+main {
+    /* background-color: rgba(0, 0, 255, 0.462); */
+    /* test */
+
+    padding: 81px 151px;
+    width: 100vw;
+    height: 100vh;
+}
+
+main .container {
+    border: 1px solid red;
+    /* test */
+
+    width: 100%;
+}
+
+/* fine main */
+
+/* bottom bar */
+.bottom-bar {
+    height: 80px;
+    border: 1px solid red;
+    /* test */
+
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+/* fine bottom bar */
